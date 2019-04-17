@@ -38,9 +38,10 @@ namespace request_response_middleware.middleare{
                     }
                     await responseBody.CopyToAsync (originalBodyStream);
                 }
-
+                
+                _logger.LogInformation (JsonConvert.SerializeObject (requestBodyContent));
                 _logger.LogInformation (JsonConvert.SerializeObject (responseBodyContent));
-
+                // if you want, you can log the request and response to the database.
 
             } else
                 await _next (httpContext);
