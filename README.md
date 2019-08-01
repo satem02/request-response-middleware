@@ -4,5 +4,4 @@
 2 - cd request-response-middleware </br>
 3 - docker-compose -f "docker-compose.yml" up -d --build </br>
 4 - http://localhost:5007/api/values </br>
-5 - open terminal or cmd
-6 - docker logs request_response</br>
+5 - docker logs request_response</br>
